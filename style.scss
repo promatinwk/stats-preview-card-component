@@ -14,7 +14,7 @@
     display: none;
 }
 body{
-    height:110vh;
+    height:115vh;
     width: 100vw;
     background-color: hsl(233, 47%, 7%);
     display: flex;
@@ -29,7 +29,7 @@ body{
         display: flex;
         flex-direction: column;
         #background{
-            flex-basis: 35%;
+            flex-basis: 30%;
             background-image: url('/images/image-header-mobile.jpg');
             background-position: center;
             background-size: cover;
@@ -55,7 +55,7 @@ body{
             align-items: center;
             padding: 10% 6% 10% 6%;
             h1{
-                flex-basis: 30%;
+                flex-basis: 26%;
                 color: hsl(0, 0%, 100%);
                 font-family: 'Inter', sans-serif;
                 font-size: 1.8rem;
@@ -70,16 +70,27 @@ body{
                 text-align: center;
                 font-family: 'Lexend Deca', sans-serif;
                 color: hsla(0, 0%, 100%, 0.75);
+                
             }
+            .dsc{
+                    font-size: 0.95rem;
+                    line-height: 1.5rem;
+                    padding: 0 10px 0 10px;
+                    
+                }
             .stats{
                 flex-grow: 1;
                 width: 100%;
                 display: flex;
                 flex-direction: column;
+                
                 .stat{
                     flex-grow: 1;
+                    margin-top: 15px;
+                    
                     .number{
-                        font-size: 1.3rem;
+                        font-size: 1.5rem;
+                        margin-bottom: 0.2rem;
                     }
                     .stat-name{
                         text-transform: uppercase;

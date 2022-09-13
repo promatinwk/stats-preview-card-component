@@ -14,7 +14,7 @@
 }
 
 body {
-  height: 110vh;
+  height: 115vh;
   width: 100vw;
   background-color: #090b1a;
   display: -webkit-box;
@@ -47,8 +47,8 @@ body #content {
 }
 
 body #content #background {
-  -ms-flex-preferred-size: 35%;
-      flex-basis: 35%;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
   background-image: url("/images/image-header-mobile.jpg");
   background-position: center;
   background-size: cover;
@@ -87,8 +87,8 @@ body #content #offer {
 }
 
 body #content #offer h1 {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  -ms-flex-preferred-size: 26%;
+      flex-basis: 26%;
   color: white;
   font-family: 'Inter', sans-serif;
   font-size: 1.8rem;
@@ -106,6 +106,12 @@ body #content #offer p {
   text-align: center;
   font-family: 'Lexend Deca', sans-serif;
   color: rgba(255, 255, 255, 0.75);
+}
+
+body #content #offer .dsc {
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  padding: 0 10px 0 10px;
 }
 
 body #content #offer .stats {
@@ -126,10 +132,12 @@ body #content #offer .stats .stat {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  margin-top: 15px;
 }
 
 body #content #offer .stats .stat .number {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
 }
 
 body #content #offer .stats .stat .stat-name {
