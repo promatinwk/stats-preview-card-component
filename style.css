@@ -136,13 +136,74 @@ body #content #offer .stats .stat {
 }
 
 body #content #offer .stats .stat .number {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 0.2rem;
+  color: white;
 }
 
 body #content #offer .stats .stat .stat-name {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.8rem;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    height: 100vh;
+  }
+  body #content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 50%;
+    width: 75%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  body #content #background {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    background-image: url("./images/image-header-desktop.jpg");
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  body #content #background::after {
+    border-top-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  body #content #offer {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding: 5% 10% 5% 5%;
+  }
+  body #content #offer h1 {
+    text-align: left;
+    font-size: 2.2rem;
+  }
+  body #content #offer h1 span {
+    font-size: 2.2rem;
+  }
+  body #content #offer p {
+    text-align: left;
+  }
+  body #content #offer .dsc {
+    padding: 0;
+    margin-top: 5%;
+  }
+  body #content #offer .stats {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 /*# sourceMappingURL=style.css.map */
